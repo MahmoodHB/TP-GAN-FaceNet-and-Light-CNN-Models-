@@ -15,8 +15,7 @@ if __name__ == '__main__':
     op = 'Adam'
 
     gan = TPGAN(base_filters=64, gpus=1,
-                #facenet_weights='E:/DLtpgan_with_facenet/facenet_model/20180408-102900.pb',
-                facenet_weights='D:/DLtpgan_with_facenet/facenet_keras_weights.h5',
+                facenet_weights='',
                 generator_weights='',
                 classifier_weights='',   
                 discriminator_weights='')
