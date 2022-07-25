@@ -31,10 +31,10 @@ if __name__ == '__main__':
                   
     #print('gan.discriminator():',gan.discriminator().output)
     gan.train_gan(gen_datagen_creator=datagen.get_generator, 
-                  gen_train_batch_size=4, #原本是32
-                  gen_valid_batch_size=4,   #原本是4
+                  gen_train_batch_size=4,
+                  gen_valid_batch_size=4,  
                   disc_datagen_creator=datagen.get_discriminator_generator, 
-                  disc_batch_size=10,  #原本是100
+                  disc_batch_size=10, 
                   disc_gt_shape=gan.discriminator().output_shape[1:3],
                   optimizer=optimizer,
                   gen_steps_per_epoch=100, disc_steps_per_epoch=100,  
